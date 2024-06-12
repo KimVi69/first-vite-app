@@ -1,20 +1,16 @@
-import React from 'react';
-import Home from './views/home';
-import About from './views/about';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/home/home";
+import About from "./pages/about/about";
 
 const App: React.FC = () => {
-  let Component;
-  switch (window.location.pathname) {
-    case '/about':
-      Component = About;
-      break;
-    case '/':
-    default:
-      Component = Home;
-      break;
-  }
-
-  return <Component />;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
+  );
 };
 
 export default App;
