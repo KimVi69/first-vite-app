@@ -3,7 +3,7 @@ import aboutImage from "../../assets/images/about-image.svg";
 const About = () => {
   return (
     <main className="flex p-20 gap-36 pb-[120px] flex-wrap">
-      <div className="flex flex-col gap-6 w-[624px] flex-1">
+      <div className="flex flex-col gap-6 flex-1">
         <h1 className="text-7xl font-bold">About</h1>
         <h2 className="text-2xl font-normal text-[#828282]">
           Subheading for description or instructions
