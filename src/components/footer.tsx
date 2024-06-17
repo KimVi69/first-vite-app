@@ -5,7 +5,7 @@ import instagramIcon from "../assets/images/instagram-icon.svg";
 
 const footer = () => {
   return (
-    <footer>
+    <footer className="pt-20">
       <hr className="mx-20" />
       <section className="px-20 py-12 flex justify-between items-center max-md:flex-col">
         <div className="flex flex-col justify-between gap-[88px] min-w-[184px]">

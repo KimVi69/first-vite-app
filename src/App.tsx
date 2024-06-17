@@ -5,6 +5,7 @@ import LandingPage from "./pages/landing page/landing page";
 import About from "./pages/about/about";
 import Article from "./pages/article/article";
 import Contact from "./pages/contact/contact";
+import Timer from "./pages/timer";
 
 const App: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const App: React.FC = () => {
           <Route path="/about" element={<About />} />
           <Route path="/article" element={<Article />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/timer" element={<Timer />} />
         </Routes>
         <Footer />
       </BrowserRouter>
