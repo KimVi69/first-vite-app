@@ -7,8 +7,8 @@ const footer = () => {
   return (
     <footer>
       <hr className="mx-20" />
-      <section className="px-20 py-12 flex justify-between items-center">
-        <div className="flex flex-col justify-between gap-[88px]">
+      <section className="px-20 py-12 flex justify-between items-center max-md:flex-col">
+        <div className="flex flex-col justify-between gap-[88px] min-w-[184px]">
           <div className=" text-2xl">Site name</div>
           <div className="flex font-normal">
             <img src={facebookIcon} alt="Facebook Icon" />
@@ -17,20 +17,20 @@ const footer = () => {
             <img src={instagramIcon} alt="Instagram Icon" />
           </div>
         </div>
-        <nav className="flex gap-8 text-[#454545] text-base font-medium">
-          <ul className="flex flex-col gap-6 w-[187px]">
+        <nav className="flex gap-8 text-[#454545] text-base font-medium max-md:flex-col">
+          <ul className="flex flex-col gap-6 w-[187px] max-md:flex-row max-md:w-full">
             <div className="text-black">Topic</div>
             <li>Page</li>
             <li>Page</li>
             <li>Page</li>
           </ul>
-          <ul className="flex flex-col gap-6 w-[187px]">
+          <ul className="flex flex-col gap-6 w-[187px] max-md:flex-row max-md:w-full">
             <div className="text-black">Topic</div>
             <li>Page</li>
             <li>Page</li>
             <li>Page</li>
           </ul>
-          <ul className="flex flex-col gap-6 w-[187px]">
+          <ul className="flex flex-col gap-6 w-[187px] max-md:flex-row max-md:w-full">
             <div className="text-black">Topic</div>
             <li>Page</li>
             <li>Page</li>

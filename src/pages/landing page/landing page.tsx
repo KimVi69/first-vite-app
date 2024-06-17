@@ -30,7 +30,7 @@ const landingPage = () => {
           </h2>
         </div>
         <div className="flex gap-20 w-full">
-          <div className="flex flex-col items-start text-start shadow-md p-8 rounded-xl justify-between gap-12 flex-1 font-medium">
+          <div className="flex flex-col items-start text-start shadow-custom p-8 rounded-xl justify-between gap-12 flex-1 font-medium">
             <p className="w-[340px] text-xl">“A terrific piece of praise”</p>
             <div className="flex gap-4">
               <img src={Avatar} alt="Landing Page Avatar" />
@@ -40,7 +40,7 @@ const landingPage = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-start text-start shadow-md p-8 rounded-xl justify-between gap-12 flex-1 font-medium">
+          <div className="flex flex-col items-start text-start shadow-custom p-8 rounded-xl justify-between gap-12 flex-1 font-medium">
             <p className="w-[340px] text-xl">“A fantastic bit of feedback”</p>
             <div className="flex gap-4">
               <img src={Avatar1} alt="Landing Page Avatar" />
@@ -50,7 +50,7 @@ const landingPage = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-start text-start shadow-md p-8 rounded-xl justify-between gap-12 flex-1 font-medium">
+          <div className="flex flex-col items-start text-start shadow-custom p-8 rounded-xl justify-between gap-12 flex-1 font-medium">
             <p className="w-[340px] text-xl">“A genuinely glowing review”</p>
             <div className="flex gap-4">
               <img src={Avatar2} alt="Landing Page Avatar" />
