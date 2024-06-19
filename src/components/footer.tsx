@@ -17,7 +17,7 @@ const footer = () => {
             <img src={instagramIcon} alt="Instagram Icon" />
           </div>
         </div>
-        <nav className="flex gap-8 text-[#454545] text-base font-medium max-md:flex-col">
+        <nav className="flex gap-0 text-[#454545] text-base font-medium max-md:flex-col lg:gap-8">
           <ul className="flex flex-col gap-6 w-[187px] max-md:flex-row max-md:w-full">
             <div className="text-black">Topic</div>
             <li>Page</li>

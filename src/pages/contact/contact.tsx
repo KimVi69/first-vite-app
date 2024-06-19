@@ -11,10 +11,15 @@ const schema = yup.object({
     .string()
     .email("* Invalid email address")
     .required("* Email is required"),
-  message: yup.string().optional(),
+  message: yup.string(),
 });
 
-type Inputs = yup.InferType<typeof schema>;
+type Inputs = {
+  firstName: string;
+  lastName: string;
+  email: string;
+  message?: string;
+};
 
 const Contact = () => {
   const {

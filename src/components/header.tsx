@@ -19,7 +19,7 @@ const header = () => {
           </li>
         </ul>
         <button className="bg-black rounded-lg text-white px-[24px] py-[14px] text-base">
-          LOGIN
+          <Link to="/register">Register</Link>
         </button>
       </nav>
     </header>
