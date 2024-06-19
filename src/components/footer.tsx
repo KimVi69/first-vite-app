@@ -9,7 +9,7 @@ const footer = () => {
       <hr className="mx-20" />
       <section className="px-20 py-12 flex justify-between items-center max-md:flex-col">
         <div className="flex flex-col justify-between gap-[88px] min-w-[184px]">
-          <div className=" text-2xl">Site name</div>
+          <div className=" text-2xl">Vite Project</div>
           <div className="flex font-normal">
             <img src={facebookIcon} alt="Facebook Icon" />
             <img src={linkedinIcon} alt="Linkedin Icon" />
