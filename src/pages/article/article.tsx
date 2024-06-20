@@ -7,7 +7,7 @@ import Image5 from "../../assets/images/article4.svg";
 
 const article = () => {
   return (
-    <main className="flex flex-col gap-20 px-20 pb-[120px]">
+    <main className="flex flex-col gap-20 px-20 pb-[120px] justify-center">
       <div className="flex flex-col gap-6 w-[733px]">
         <h1 className="text-[64px] font-bold leading-[77.45px]">
           Article or post title
@@ -24,8 +24,8 @@ const article = () => {
           alt="Article Image"
         />
       </div>
-      <div className="flex justify-center px-[299px] text-xl font-medium">
-        <p>
+      <div className="flex text-xl font-medium w-full justify-center">
+        <p className="w-[75%]">
           Body text for your whole article or post. We’ll put in some lorem
           ipsum to show how a filled-out page might look:
           <br />
@@ -45,12 +45,20 @@ const article = () => {
           esse Asia-Pacific laboris.
         </p>
       </div>
-      <div className="flex gap-20">
-        <img className="flex-1" src={Image1} alt="Article Image 2" />
-        <img className="flex-1" src={Image2} alt="Article Image 3" />
+      <div className="flex gap-20 justify-between items-center">
+        <img
+          className="object-cover flex-1 overflow-hidden h-full"
+          src={Image1}
+          alt="Article Image 2"
+        />
+        <img
+          className="object-cover flex-1 overflow-hidden h-full"
+          src={Image2}
+          alt="Article Image 3"
+        />
       </div>
-      <div className="flex justify-center px-[299px] text-xl font-medium pb-10">
-        <p>
+      <div className="flex text-xl font-medium w-full justify-center pb-10">
+        <p className="w-[75%]">
           Excepteur efficient emerging, minim veniam anim cloying aute carefully
           curated gauche. Espresso exquisite perfect nostrud nisi intricate.
           Punctual adipisicing Borzoi, essential lovely tempor eiusmod irure.

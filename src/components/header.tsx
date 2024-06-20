@@ -1,6 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../pages/authentication/AuthContext";
 
-const header = () => {
+const Header = () => {
+  const { isAuthenticated } = useAuth();
+  const { logout } = useAuth();
+  const navigate = useNavigate();
+
   return (
     <header className="flex justify-between h-[164px] items-center px-20 max-md:flex-col max-md:justify-end max-md:gap-8">
       <div className="text-xl font-medium">
@@ -18,12 +23,23 @@ const header = () => {
             <Link to="/about">About</Link>
           </li>
         </ul>
-        <button className="bg-black rounded-lg text-white px-[24px] py-[14px] text-base">
-          <Link to="/register">Register</Link>
-        </button>
+        {isAuthenticated ? (
+          <button
+            onClick={logout}
+            className="bg-black rounded-lg text-white px-[24px] py-[14px] text-base"
+          >
+            Logout
+          </button>
+        ) : (
+          <Link to="/login">
+            <button className="bg-black rounded-lg text-white px-[24px] py-[14px] text-base">
+              Login
+            </button>
+          </Link>
+        )}
       </nav>
     </header>
   );
 };
 
-export default header;
+export default Header;

@@ -3,7 +3,7 @@ import Avatar from "../../assets/images/avatar.svg";
 import Avatar1 from "../../assets/images/avatar1.svg";
 import Avatar2 from "../../assets/images/avatar2.svg";
 
-const landingPage = () => {
+const LandingPage = () => {
   return (
     <main className="flex flex-col text-center items-center gap-[120px] px-20">
       <div className="flex flex-col gap-6 items-center pt-[120px]">
@@ -66,4 +66,4 @@ const landingPage = () => {
   );
 };
 
-export default landingPage;
+export default LandingPage;
