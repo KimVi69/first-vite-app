@@ -10,13 +10,15 @@ import Timer from './pages/exercises/timer'
 import Filter from './pages/exercises/filter'
 import UseRef from './pages/exercises/useRef'
 import Quote from './pages/exercises/quote'
+import Todo from './pages/exercises/todo'
+import Quiz from './pages/exercises/quiz'
 import Register from './pages/authentication/register'
 import Login from './pages/authentication/login'
 import { AuthProvider } from './pages/authentication/AuthContext'
 
 const MainContent: React.FC = () => {
   const location = useLocation()
-  const noHeaderPaths = ['/register', '/login']
+  const noHeaderPaths = ['/register', '/login', '/quiz']
 
   return (
     <>
@@ -30,6 +32,8 @@ const MainContent: React.FC = () => {
         <Route path='/filter' element={<Filter />} />
         <Route path='/useRef' element={<UseRef />} />
         <Route path='/quote' element={<Quote />} />
+        <Route path='/todo' element={<Todo />} />
+        <Route path='/quiz' element={<Quiz />} />
         <Route path='/register' element={<Register />} />
         <Route path='/login' element={<Login />} />
       </Routes>
